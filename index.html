@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Revision</title>
- 
 <style>
-body {
-        background-image: url("Nopub.jpg");
-        height: 100%;
-        
-        background-repeat: no-repeat;
-        background-size: cover;
- } 
- h1 {
-  color: orange;
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('nopub.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 70px;
- }
- 
- p {
-  color: b2cefe;
-  font-size: 30px;
-  text-align: center;
- }
-  
- P {
-  font-family: Audiowide
-   font-size: 20px
- }
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
 </style>
- 
-</head>
- 
 <body>
-  <center> 
 
-   <p style="text-align:center;"></p>
+<div class="bgimg">
+  <div class="topleft">
+    <p>ShaddyShack</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p>Whenever I'm not lazy</p>
+  </div>
+  <div class="bottomleft">
+    <p>-Austin Shatterly</p>
+  </div>
+</div>
 
- </center>
 </body>
- 
-<h1>
- 
- 
- 
- 
- </h1>
-
- 
-
- 
- 
- 
 </html>
