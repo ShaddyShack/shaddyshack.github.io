@@ -2,133 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Resume | Shaddy Shack</title>
+  <title>Resume | Your Name</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* Styles for the main section */
-    #main {
-      margin: 50px auto;
-      width: 80%;
-      max-width: 800px;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Styles for the header section */
-    #header {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    /* Styles for the name */
-    #name {
-      font-size: 36px;
-      margin: 0;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    /* Styles for the contact information */
-    #contact {
-      margin-top: 30px;
-      font-size: 20px;
-      text-align: center;
-    }
-
-    #contact p {
-      margin: 5px 0;
-    }
-
-    /* Styles for the main content section */
-    #content {
-      margin-top: 50px;
-      font-size: 18px;
-      line-height: 1.5;
-    }
-
-    /* Styles for the education section */
-    .education {
-      margin-top: 30px;
-    }
-
-    .education h2 {
-      margin-top: 0;
-      font-size: 24px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .education h3 {
-      font-size: 20px;
-      margin: 10px 0;
-    }
-
-    /* Styles for the work experience section */
-    .experience {
-      margin-top: 30px;
-    }
-
-    .experience h2 {
-      margin-top: 0;
-      font-size: 24px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .experience h3 {
-      font-size: 20px;
-      margin: 10px 0;
-    }
-
-    /* Styles for the skills section */
-    .skills {
-      margin-top: 30px;
-    }
-
-    .skills h2 {
-      margin-top: 0;
-      font-size: 24px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .skills ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .skills li {
-      margin-right: 20px;
-      margin-bottom: 10px;
-      padding: 5px 10px;
-      background-color: #333;
-      color: white;
-      border-radius: 20px;
-      font-weight: bold;
-      font-size: 16px;
-      text-transform: uppercase;
-    }
-
-    /* Styles for the footer section */
-    #footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 50px;
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="main">
-    <div id="header">
-      <h1 id="name">Shaddy Shack</h1>
-      <div id="contact">
-        <p>Address: ADDRESS TEST</p>
-        <p>Phone: (123) 555-0000</p>
-        <p>Email: youremail@example.com
+  <div class="container-fluid bg-primary text-white p-5">
+    <h1 class="text-center mb-4">Your Name</h1>
+    <h4 class="text-center mb-4">Job Title</h4>
+    <div class="row justify-content-center">
+      <div class="col-md-4 text-center">
+        <p class="lead mb-1">Address</p>
+        <p>1234 Main St</p>
+        <p>City, State ZIP</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <p class="lead mb-1">Contact</p>
+        <p>Email: yourname@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+      <div class="col-md-4 text-center">
+        <p class="lead mb-1">Links</p>
+        <p><a href="https://linkedin.com/in/yourname">LinkedIn</a></p>
+        <p><a href="https://github.com/yourusername">GitHub</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid p-5">
+    <h2>Summary</h2>
+    <p class="lead">Brief summary of your skills, experience, and goals. Keep it short and sweet.</p>
+  </div>
+
+  <div class="container-fluid bg-light p-5">
+    <h2>Experience</h2>
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <p class="text-primary mb-0">Job Title</p>
+        <p class="text-muted mb-0">Company Name</p>
+        <p class="text-muted mb-0">Dates Employed</p>
+      </div>
+      <div class="col-md-9">
+        <p class="lead">Brief description of your responsibilities and accomplishments in this role.</p>
+        <ul>
+          <li>Bullet point 1</li>
+          <li>Bullet point 2</li>
+          <li>Bullet point 3</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Add more rows for additional experience -->
+  </div>
+
+  <div class="container-fluid p-5">
+    <h2>Education</h2>
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <p class="text-primary mb-0">Degree</p>
+        <p class="text-muted mb-0">University Name</p>
+        <p class="text-muted mb-0">
