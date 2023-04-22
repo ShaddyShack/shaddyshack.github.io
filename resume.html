@@ -25,12 +25,19 @@
     #name {
       font-size: 36px;
       margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
     /* Styles for the contact information */
     #contact {
       margin-top: 30px;
       font-size: 20px;
+      text-align: center;
+    }
+
+    #contact p {
+      margin: 5px 0;
     }
 
     /* Styles for the main content section */
@@ -48,16 +55,13 @@
     .education h2 {
       margin-top: 0;
       font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
-    .education ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .education li {
-      margin-bottom: 10px;
+    .education h3 {
+      font-size: 20px;
+      margin: 10px 0;
     }
 
     /* Styles for the work experience section */
@@ -68,16 +72,13 @@
     .experience h2 {
       margin-top: 0;
       font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
-    .experience ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .experience li {
-      margin-bottom: 10px;
+    .experience h3 {
+      font-size: 20px;
+      margin: 10px 0;
     }
 
     /* Styles for the skills section */
@@ -88,16 +89,28 @@
     .skills h2 {
       margin-top: 0;
       font-size: 24px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     .skills ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .skills li {
+      margin-right: 20px;
       margin-bottom: 10px;
+      padding: 5px 10px;
+      background-color: #333;
+      color: white;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
     }
 
     /* Styles for the footer section */
@@ -107,6 +120,7 @@
       text-align: center;
       padding: 10px;
       margin-top: 50px;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -117,14 +131,4 @@
       <div id="contact">
         <p>Address: ADDRESS TEST</p>
         <p>Phone: (123) 555-0000</p>
-        <p>Email: youremail@example.com</p>
-        <p>Website: Shatterly.net</p>
-      </div>
-    </div>
-    <div id="content">
-      <h2>Education</h2>
-      <div class="education">
-        <h3>Northeast State Community College</h3>
-        <p>TEST</p>
-
-     
+        <p>Email: youremail@example.com
