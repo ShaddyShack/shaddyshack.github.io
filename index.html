@@ -4,11 +4,11 @@
   <link rel="icon" href="Nopub.jpg">
   <title>My Website</title>
   <style>
-    /* CSS styling for the entire page */
     body, html {
       height: 100%;
       margin: 0;
     }
+
     .bgimg {
       background-image: url('Background.gif');
       height: 100%;
@@ -19,16 +19,19 @@
       font-family: "Courier New", Courier, monospace;
       font-size: 25px;
     }
+
     .topleft {
       position: absolute;
       top: 0;
       left: 0px;
     }
+
     .bottomleft {
       position: absolute;
       bottom: 0;
       left: 16px;
     }
+
     .middle {
       position: absolute;
       top: 50%;
@@ -36,88 +39,80 @@
       transform: translate(-50%, -50%);
       text-align: center;
     }
+
     hr {
       margin: auto;
       width: 40%;
+    }
+
+    /* Styling for the navigation links */
+    .nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-<!-- Home page -->
-<div class="bgimg" id="home">
-  <div class="topleft">
-    <p></p>
+  <!-- Home page -->
+  <div class="bgimg" id="home">
+    <div class="topleft">
+      <p></p>
+    </div>
+    <div class="middle">
+      <h1>Home Page</h1>
+      <hr>
+      <p>Welcome to my website!</p>
+    </div>
+    <div class="bottomleft">
+      <p>-</p>
+    </div>
+    <a class="nav" href="#home">Home</a>
+    <a class="nav" href="#tech">Tech</a>
+    <a class="nav" href="#socials">Socials</a>
+    <a class="nav" href="#resume">Resume</a>
+    <a class="nav" href="#runescape">Runescape</a>
   </div>
-  <div class="middle">
-    <h1>Home</h1>
-    <hr>
-    <p>Insert home page content here</p>
-  </div>
-  <div class="bottomleft">
-    <p>-</p>
-  </div>
-</div>
 
-<!-- Tech page -->
-<div class="bgimg" id="tech">
-  <div class="topleft">
-    <p></p>
+  <!-- Tech page -->
+  <div class="bgimg" id="tech">
+    <div class="topleft">
+      <p></p>
+    </div>
+    <div class="middle">
+      <h1>Tech Page</h1>
+      <hr>
+      <p>Check out my latest tech projects!</p>
+    </div>
+    <div class="bottomleft">
+      <p>-</p>
+    </div>
+    <a class="nav" href="#home">Home</a>
+    <a class="nav" href="#tech">Tech</a>
+    <a class="nav" href="#socials">Socials</a>
+    <a class="nav" href="#resume">Resume</a>
+    <a class="nav" href="#runescape">Runescape</a>
   </div>
-  <div class="middle">
-    <h1>Tech</h1>
-    <hr>
-    <p>Insert tech page content here</p>
-  </div>
-  <div class="bottomleft">
-    <p>-</p>
-  </div>
-</div>
 
-<!-- Socials page -->
-<div class="bgimg" id="socials">
-  <div class="topleft">
-    <p></p>
-  </div>
-  <div class="middle">
-    <h1>Socials</h1>
-    <hr>
-    <p>Insert socials page content here</p>
-  </div>
-  <div class="bottomleft">
-    <p>-</p>
-  </div>
-</div>
-
-<!-- Resume page -->
-<div class="bgimg" id="resume">
-  <div class="topleft">
-    <p></p>
-  </div>
-  <div class="middle">
-    <h1>Resume</h1>
-    <hr>
-    <p>Insert resume page content here</p>
-  </div>
-  <div class="bottomleft">
-    <p>-</p>
-  </div>
-</div>
-
-<!-- Runescape page -->
-<div class="bgimg" id="runescape">
-  <div class="topleft">
-    <p></p>
-  </div>
-  <div class="middle">
-    <h1>Runescape</h1>
-    <hr>
-    <p>Insert Runescape page content here</p>
-  </div>
-  <div class="bottomleft">
-    <p>-</p>
-  </div>
-</div>
-
-</body>
-</html>
+  <!-- Socials page -->
+  <div class="bgimg" id="socials">
+    <div class="topleft">
+      <p></p>
+    </div>
+    <div class="middle">
+      <h1>Socials Page</h1>
+      <hr>
+      <p>Connect with me on social media!</p>
+    </div>
+    <div class="bottomleft">
+      <p>-</p>
+    </div>
+    <a class="
