@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to my website</title>
   <link rel="icon" href="Nopub.jpg">
   <style>
     body, html {
@@ -19,26 +22,37 @@
       font-size: 25px;
     }
 
-    .topleft {
+    .topleft,
+    .topright,
+    .bottomleft,
+    .bottomright {
       position: absolute;
-      top: 0;
-      left: 16px;
+      display: inline-block;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: background-color 0.5s ease;
     }
 
-    .bottomleft {
-      position: absolute;
-      bottom: 0;
+    .topleft {
+      top: 0;
       left: 16px;
     }
 
     .topright {
-      position: absolute;
       top: 0;
       right: 16px;
     }
 
+    .bottomleft {
+      bottom: 0;
+      left: 16px;
+    }
+
     .bottomright {
-      position: absolute;
       bottom: 0;
       right: 16px;
     }
@@ -56,17 +70,6 @@
       width: 40%;
     }
 
-    .link {
-      display: inline-block;
-      padding: 10px;
-      background-color: rgba(255, 255, 255, 0.1);
-      border-radius: 5px;
-      text-decoration: none;
-      color: white;
-      font-size: 18px;
-      transition: background-color 0.5s ease;
-    }
-
     .link:hover {
       background-color: rgba(255, 255, 255, 0.2);
     }
@@ -75,25 +78,13 @@
 <body>
 
   <div class="bgimg">
-    <div class="topleft">
-      <a href="home.html" class="link">Home</a>
-    </div>
-    <div class="topright">
-      <a href="tech.html" class="link">Tech</a>
-    </div>
+    <a href="home.html" class="topleft">Home</a>
+    <a href="tech.html" class="topright">Tech</a>
     <div class="middle">
       <h1>Welcome to my website</h1>
       <hr>
       <p>This website is still under construction. Please check back later for updates.</p>
     </div>
-    <div class="bottomleft">
-      <a href="socials.html" class="link">Socials</a>
-    </div>
+    <a href="socials.html" class="bottomleft">Socials</a>
     <div class="bottomright">
-      <a href="resume.html" class="link">Resume</a>
-      <a href="runescape.html" class="link">Runescape</a>
-    </div>
-  </div>
-
-</body>
-</html>
+      <a href="resume.html" class="link">Resume</a
