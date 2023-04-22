@@ -2,59 +2,117 @@
 <html>
 <head>
   <link rel="icon" href="Nopub.jpg">
-  </head>>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.bgimg {
-  background-image: url('Background.gif');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
-
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 0px;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
+  <title>My Website</title>
+  <style>
+    /* CSS styling for the entire page */
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    .bgimg {
+      background-image: url('Background.gif');
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      color: white;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 25px;
+    }
+    .topleft {
+      position: absolute;
+      top: 0;
+      left: 0px;
+    }
+    .bottomleft {
+      position: absolute;
+      bottom: 0;
+      left: 16px;
+    }
+    .middle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    hr {
+      margin: auto;
+      width: 40%;
+    }
+  </style>
+</head>
 <body>
 
-<div class="bgimg">
+<!-- Home page -->
+<div class="bgimg" id="home">
   <div class="topleft">
     <p></p>
   </div>
   <div class="middle">
-    <h1></h1>
+    <h1>Home</h1>
     <hr>
+    <p>Insert home page content here</p>
+  </div>
+  <div class="bottomleft">
+    <p>-</p>
+  </div>
+</div>
+
+<!-- Tech page -->
+<div class="bgimg" id="tech">
+  <div class="topleft">
     <p></p>
+  </div>
+  <div class="middle">
+    <h1>Tech</h1>
+    <hr>
+    <p>Insert tech page content here</p>
+  </div>
+  <div class="bottomleft">
+    <p>-</p>
+  </div>
+</div>
+
+<!-- Socials page -->
+<div class="bgimg" id="socials">
+  <div class="topleft">
+    <p></p>
+  </div>
+  <div class="middle">
+    <h1>Socials</h1>
+    <hr>
+    <p>Insert socials page content here</p>
+  </div>
+  <div class="bottomleft">
+    <p>-</p>
+  </div>
+</div>
+
+<!-- Resume page -->
+<div class="bgimg" id="resume">
+  <div class="topleft">
+    <p></p>
+  </div>
+  <div class="middle">
+    <h1>Resume</h1>
+    <hr>
+    <p>Insert resume page content here</p>
+  </div>
+  <div class="bottomleft">
+    <p>-</p>
+  </div>
+</div>
+
+<!-- Runescape page -->
+<div class="bgimg" id="runescape">
+  <div class="topleft">
+    <p></p>
+  </div>
+  <div class="middle">
+    <h1>Runescape</h1>
+    <hr>
+    <p>Insert Runescape page content here</p>
   </div>
   <div class="bottomleft">
     <p>-</p>
