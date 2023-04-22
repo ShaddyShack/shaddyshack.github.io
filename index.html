@@ -2,7 +2,6 @@
 <html>
 <head>
   <link rel="icon" href="Nopub.jpg">
-  <title>My Website</title>
   <style>
     body, html {
       height: 100%;
@@ -23,13 +22,25 @@
     .topleft {
       position: absolute;
       top: 0;
-      left: 0px;
+      left: 16px;
     }
 
     .bottomleft {
       position: absolute;
       bottom: 0;
       left: 16px;
+    }
+
+    .topright {
+      position: absolute;
+      top: 0;
+      right: 16px;
+    }
+
+    .bottomright {
+      position: absolute;
+      bottom: 0;
+      right: 16px;
     }
 
     .middle {
@@ -45,74 +56,44 @@
       width: 40%;
     }
 
-    /* Styling for the navigation links */
-    .nav {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 20px;
+    .link {
+      display: inline-block;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
       text-decoration: none;
       color: white;
+      font-size: 18px;
+      transition: background-color 0.5s ease;
     }
 
-    .nav:hover {
-      text-decoration: underline;
+    .link:hover {
+      background-color: rgba(255, 255, 255, 0.2);
     }
   </style>
 </head>
 <body>
 
-  <!-- Home page -->
-  <div class="bgimg" id="home">
+  <div class="bgimg">
     <div class="topleft">
-      <p></p>
+      <a href="home.html" class="link">Home</a>
+    </div>
+    <div class="topright">
+      <a href="tech.html" class="link">Tech</a>
     </div>
     <div class="middle">
-      <h1>Home Page</h1>
+      <h1>Welcome to my website</h1>
       <hr>
-      <p>Welcome to my website!</p>
+      <p>This website is still under construction. Please check back later for updates.</p>
     </div>
     <div class="bottomleft">
-      <p>-</p>
+      <a href="socials.html" class="link">Socials</a>
     </div>
-    <a class="nav" href="#home">Home</a>
-    <a class="nav" href="#tech">Tech</a>
-    <a class="nav" href="#socials">Socials</a>
-    <a class="nav" href="#resume">Resume</a>
-    <a class="nav" href="#runescape">Runescape</a>
+    <div class="bottomright">
+      <a href="resume.html" class="link">Resume</a>
+      <a href="runescape.html" class="link">Runescape</a>
+    </div>
   </div>
 
-  <!-- Tech page -->
-  <div class="bgimg" id="tech">
-    <div class="topleft">
-      <p></p>
-    </div>
-    <div class="middle">
-      <h1>Tech Page</h1>
-      <hr>
-      <p>Check out my latest tech projects!</p>
-    </div>
-    <div class="bottomleft">
-      <p>-</p>
-    </div>
-    <a class="nav" href="#home">Home</a>
-    <a class="nav" href="#tech">Tech</a>
-    <a class="nav" href="#socials">Socials</a>
-    <a class="nav" href="#resume">Resume</a>
-    <a class="nav" href="#runescape">Runescape</a>
-  </div>
-
-  <!-- Socials page -->
-  <div class="bgimg" id="socials">
-    <div class="topleft">
-      <p></p>
-    </div>
-    <div class="middle">
-      <h1>Socials Page</h1>
-      <hr>
-      <p>Connect with me on social media!</p>
-    </div>
-    <div class="bottomleft">
-      <p>-</p>
-    </div>
-    <a class="
+</body>
+</html>
