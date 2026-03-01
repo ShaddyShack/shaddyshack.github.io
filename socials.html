@@ -1,107 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Social Media Profiles</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socials</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      background: #C0C0C0;
-      font-family: "Times New Roman", serif;
-      color: #000;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f1f5f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 60px 20px 30px;
       text-align: center;
     }
 
-    h1 {
-      font-size: 24px;
-      background: #000080;
-      color: white;
-      padding: 20px;
-      border-bottom: 4px solid #000;
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      letter-spacing: -1px;
     }
 
-    table {
-      margin: 50px auto;
-      background: #FFFFFF;
-      border: 2px solid #000;
-      padding: 40px;
-      width: 80%; /* Bigger box */
+    header p {
+      margin-top: 10px;
+      color: #94a3b8;
+      font-size: 1rem;
+    }
+
+    .social-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      width: 90%;
       max-width: 900px;
+      padding: 20px;
     }
 
-    td {
-      padding: 30px; 
-      vertical-align: middle;
-      height: 140px;
-      width: 180px;
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 30px;
       text-align: center;
-    }
-
-    a {
-      color: #0000EE;
       text-decoration: none;
-      font-size: 16px;
+      color: inherit;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
-    a:hover {
-      text-decoration: underline;
+    .card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
 
-    img, i {
+    .card i {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .card span {
       display: block;
-      margin: 0 auto 10px auto;
-      height: 64px; /
+      font-weight: 500;
+      margin-top: 5px;
     }
 
-    i {
-      font-size: 64px;
+    .placeholder {
+      background: rgba(255, 255, 255, 0.03);
+      border: 2px dashed rgba(255, 255, 255, 0.15);
+      cursor: default;
+    }
+
+    .placeholder:hover {
+      transform: none;
+      box-shadow: none;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .twitter { color: #1DA1F2; }
+    .linkedin { color: #0077B5; }
+
+    footer {
+      margin-top: auto;
+      padding: 30px;
+      font-size: 0.85rem;
+      color: #64748b;
     }
   </style>
-
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
 
-  <h1>Connect with Me on Social Media!</h1>
+  <header>
+    <h1>Header</h1>
+    <p>Footer</p>
+  </header>
 
-<table>
-  <tr>
-    <td>
-      <a href="https://discord.com">
-        <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/67d00cf7266d2c75571aebde_Example.svg" alt="Discord Logo">
-        Shatterly on Discord!
-      </a>
-    </td>
+  <div class="social-container">
 
-    <td style="width: 50px;"></td> <!-- Spacer -->
+    <a class="card" href="https://discord.com" target="_blank">
+      <i class="fa-brands fa-discord" style="color:#5865F2;"></i>
+      <span>Shatterly on Discord</span>
+    </a>
 
-    <td>
-      <a href="https://www.twitter.com/AShatterly">
-        <i class="fab fa-twitter" style="color: #1DA1F2;"></i>
-        Twitter
-      </a>
-    </td>
+    <a class="card" href="https://twitter.com/AShatterly" target="_blank">
+      <i class="fa-brands fa-x-twitter twitter"></i>
+      <span>Twitter</span>
+    </a>
 
-    <td style="width: 50px;"></td> <!-- Spacer -->
+    <a class="card" href="https://steamcommunity.com/id/SniperTeamTwo/" target="_blank">
+      <i class="fa-brands fa-steam" style="color:#1b283;"></i>
+      <span>ShaddyShack Steam</span>
+    </a>
 
-    <td>
-      <a href="https://steamcommunity.com/id/SniperTeamTwo/">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/512px-Steam_icon_logo.svg.png" alt="Steam Logo">
-        ShaddyShack Steam
-      </a>
-    </td>
+    <a class="card" href="https://linkedin.com" target="_blank">
+      <i class="fa-brands fa-linkedin linkedin"></i>
+      <span>LinkedIn - Linking Soon</span>
+    </a>
 
-    <td style="width: 50px;"></td> <!-- Spacer -->
+    <!-- Empty Placeholder Square -->
+    <div class="card placeholder">
+      <span>Coming Soon</span>
+    </div>
 
-    <td>
-      <a href="https://www.linkedin.com">
-        <i class="fab fa-linkedin" style="color: #0077B5;"></i>
-        LinkedIn Coming Soon :)
-      </a>
-    </td>
-  </tr>
-</table>
-  <hr style="width: 80%; border: 1px dashed #000;">
-  <p>© 1999-2025 ShaddyShack Industries</p>
+  </div>
+
+  <footer>
+    © 1999–2025 ShaddyShack Industries
+  </footer>
 
 </body>
 </html>
