@@ -1,65 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Resume | Your Name</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume | ShaddyShack</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family:'Inter', sans-serif;
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+  color:#f1f5f9;
+  min-height:100vh;
+}
+
+/* Navigation */
+nav {
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:20px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(8px);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  position:relative;
+  transition:0.3s ease;
+}
+
+nav a::after {
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0;
+  height:3px;
+  background:#ffd700;
+  transition:0.3s ease;
+}
+
+nav a:hover::after { width:100%; }
+nav a:hover { transform:translateY(-3px); }
+
+/* Layout */
+.section {
+  max-width:1000px;
+  margin:80px auto;
+  padding:0 20px;
+}
+
+.section h2 {
+  font-size:2rem;
+  margin-bottom:30px;
+  color:#ffd700;
+}
+
+/* Header Card */
+.header-card {
+  background:rgba(255,255,255,0.05);
+  border-radius:20px;
+  padding:40px;
+  text-align:center;
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.08);
+  transition:0.3s ease;
+}
+
+.header-card:hover {
+  transform:translateY(-8px);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+.header-card h1 {
+  font-size:2.5rem;
+  margin-bottom:10px;
+}
+
+.header-card p {
+  color:#94a3b8;
+}
+
+/* Experience Cards */
+.exp-card {
+  background:rgba(255,255,255,0.05);
+  border-radius:16px;
+  padding:30px;
+  margin-bottom:30px;
+  border:1px solid rgba(255,255,255,0.08);
+  transition:0.3s ease;
+}
+
+.exp-card:hover {
+  transform:translateY(-6px);
+  background:rgba(255,255,255,0.1);
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.exp-title {
+  font-weight:600;
+  font-size:1.1rem;
+}
+
+.exp-meta {
+  color:#94a3b8;
+  font-size:0.9rem;
+  margin-bottom:10px;
+}
+
+ul {
+  margin-top:10px;
+  padding-left:20px;
+}
+
+li {
+  margin-bottom:6px;
+}
+
+footer {
+  text-align:center;
+  padding:30px;
+  font-size:0.85rem;
+  color:#64748b;
+}
+</style>
 </head>
+
 <body>
-  <div class="container-fluid bg-primary text-white p-5">
-    <h1 class="text-center mb-4">Your Name</h1>
-    <h4 class="text-center mb-4">Job Title</h4>
-    <div class="row justify-content-center">
-      <div class="col-md-4 text-center">
-        <p class="lead mb-1">Address</p>
-        <p>1234 Main St</p>
-        <p>City, State ZIP</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <p class="lead mb-1">Contact</p>
-        <p>Email: yourname@example.com</p>
-        <p>Phone: (123) 456-7890</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <p class="lead mb-1">Links</p>
-        <p><a href="https://linkedin.com/in/yourname">LinkedIn</a></p>
-        <p><a href="https://github.com/yourusername">GitHub</a></p>
-      </div>
-    </div>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="socials.html">Socials</a>
+  <a href="resume.html">Resume</a>
+</nav>
+
+<!-- Header -->
+<div class="section">
+  <div class="header-card">
+    <h1>Your Name</h1>
+    <p>Job Title • City, State</p>
+    <p>Email • Phone • LinkedIn • GitHub</p>
+  </div>
+</div>
+
+<!-- Summary -->
+<div class="section">
+  <h2>Summary</h2>
+  <div class="exp-card">
+    <p>
+      Brief professional summary describing your focus, technical strengths,
+      and what kind of roles you're pursuing.
+    </p>
+  </div>
+</div>
+
+<!-- Experience -->
+<div class="section">
+  <h2>Experience</h2>
+
+  <div class="exp-card">
+    <div class="exp-title">Job Title</div>
+    <div class="exp-meta">Company Name • Dates Employed</div>
+    <ul>
+      <li>Achievement or responsibility</li>
+      <li>Achievement or responsibility</li>
+      <li>Achievement or responsibility</li>
+    </ul>
   </div>
 
-  <div class="container-fluid p-5">
-    <h2>Summary</h2>
-    <p class="lead">Brief summary of your skills, experience, and goals. Keep it short and sweet.</p>
+  <div class="exp-card">
+    <div class="exp-title">Another Role</div>
+    <div class="exp-meta">Company Name • Dates</div>
+    <ul>
+      <li>Impact-driven bullet point</li>
+      <li>Impact-driven bullet point</li>
+    </ul>
   </div>
 
-  <div class="container-fluid bg-light p-5">
-    <h2>Experience</h2>
-    <div class="row mb-4">
-      <div class="col-md-3">
-        <p class="text-primary mb-0">Job Title</p>
-        <p class="text-muted mb-0">Company Name</p>
-        <p class="text-muted mb-0">Dates Employed</p>
-      </div>
-      <div class="col-md-9">
-        <p class="lead">Brief description of your responsibilities and accomplishments in this role.</p>
-        <ul>
-          <li>Bullet point 1</li>
-          <li>Bullet point 2</li>
-          <li>Bullet point 3</li>
-        </ul>
-      </div>
-    </div>
-    <!-- Add more rows for additional experience -->
-  </div>
+</div>
 
-  <div class="container-fluid p-5">
-    <h2>Education</h2>
-    <div class="row mb-4">
-      <div class="col-md-3">
-        <p class="text-primary mb-0">Degree</p>
-        <p class="text-muted mb-0">University Name</p>
-        <p class="text-muted mb-0">
+<!-- Education -->
+<div class="section">
+  <h2>Education</h2>
+
+  <div class="exp-card">
+    <div class="exp-title">Degree</div>
+    <div class="exp-meta">University Name • Graduation Year</div>
+  </div>
+</div>
+
+<footer>
+© 1999–2026 ShaddyShack Industries
+</footer>
+
+</body>
+</html>
