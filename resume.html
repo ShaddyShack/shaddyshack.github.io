@@ -1,47 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ShaddyShack | Resume</title>
-  <link rel="icon" href="Nopub.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume | ShaddyShack</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family:'Inter', sans-serif;
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+  color:#f1f5f9;
+  min-height:100vh;
+}
+
+/* Navigation */
+nav {
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  padding:20px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(8px);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+nav a {
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  position:relative;
+  transition:0.3s ease;
+}
+
+nav a::after {
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0;
+  height:3px;
+  background:#ffd700;
+  transition:0.3s ease;
+}
+
+nav a:hover::after { width:100%; }
+nav a:hover { transform:translateY(-3px); }
+
+/* Layout */
+.section {
+  max-width:1000px;
+  margin:80px auto;
+  padding:0 20px;
+}
+
+.section h2 {
+  font-size:2rem;
+  margin-bottom:30px;
+  color:#ffd700;
+}
+
+/* Header Card */
+.header-card {
+  background:rgba(255,255,255,0.05);
+  border-radius:20px;
+  padding:40px;
+  text-align:center;
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.08);
+  transition:0.3s ease;
+}
+
+.header-card:hover {
+  transform:translateY(-8px);
+  box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+.header-card h1 {
+  font-size:2.5rem;
+  margin-bottom:10px;
+}
+
+.header-card p {
+  color:#94a3b8;
+}
+
+/* Experience Cards */
+.exp-card {
+  background:rgba(255,255,255,0.05);
+  border-radius:16px;
+  padding:30px;
+  margin-bottom:30px;
+  border:1px solid rgba(255,255,255,0.08);
+  transition:0.3s ease;
+}
+
+.exp-card:hover {
+  transform:translateY(-6px);
+  background:rgba(255,255,255,0.1);
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.exp-title {
+  font-weight:600;
+  font-size:1.1rem;
+}
+
+.exp-meta {
+  color:#94a3b8;
+  font-size:0.9rem;
+  margin-bottom:10px;
+}
+
+ul {
+  margin-top:10px;
+  padding-left:20px;
+}
+
+li {
+  margin-bottom:6px;
+}
+
+footer {
+  text-align:center;
+  padding:30px;
+  font-size:0.85rem;
+  color:#64748b;
+}
+</style>
 </head>
+
 <body>
-  <nav class="nav" aria-label="Main">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="tech.html">Tech</a>
-    <a href="socials.html">Socials</a>
-    <a href="resume.html" aria-current="page">Resume</a>
-  </nav>
-  <main>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="socials.html">Socials</a>
+  <a href="resume.html">Resume</a>
+</nav>
+
+<!-- Header -->
+<div class="section">
+  <div class="header-card">
     <h1>Your Name</h1>
-    <p class="lead">Job title &middot; City, State<br>Email &middot; Phone &middot; LinkedIn &middot; GitHub</p>
+    <p>Job Title • City, State</p>
+    <p>Email • Phone • LinkedIn • GitHub</p>
+  </div>
+</div>
 
-    <h2>Summary</h2>
-    <div class="card"><p>A short summary of your focus, technical strengths and the roles you want.</p></div>
+<!-- Summary -->
+<div class="section">
+  <h2>Summary</h2>
+  <div class="exp-card">
+    <p>
+      Brief professional summary describing your focus, technical strengths,
+      and what kind of roles you're pursuing.
+    </p>
+  </div>
+</div>
 
-    <h2>Experience</h2>
-    <div class="card">
-      <strong>Job title</strong>
-      <div class="muted">Company name &middot; Dates employed</div>
-      <ul><li>Achievement or responsibility</li><li>Achievement or responsibility</li><li>Achievement or responsibility</li></ul>
-    </div>
-    <div class="card">
-      <strong>Another role</strong>
-      <div class="muted">Company name &middot; Dates employed</div>
-      <ul><li>Achievement or responsibility</li><li>Achievement or responsibility</li></ul>
-    </div>
+<!-- Experience -->
+<div class="section">
+  <h2>Experience</h2>
 
-    <h2>Education</h2>
-    <div class="card"><strong>Degree</strong><div class="muted">University name &middot; Graduation year</div></div>
-  </main>
-  <footer>
-  &copy; 2026 ShaddyShack Industries &middot; <a href="socials.html">Socials</a> &middot; <a href="resume.html">Resume</a>
+  <div class="exp-card">
+    <div class="exp-title">Job Title</div>
+    <div class="exp-meta">Company Name • Dates Employed</div>
+    <ul>
+      <li>Achievement or responsibility</li>
+      <li>Achievement or responsibility</li>
+      <li>Achievement or responsibility</li>
+    </ul>
+  </div>
+
+  <div class="exp-card">
+    <div class="exp-title">Another Role</div>
+    <div class="exp-meta">Company Name • Dates</div>
+    <ul>
+      <li>Impact-driven bullet point</li>
+      <li>Impact-driven bullet point</li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- Education -->
+<div class="section">
+  <h2>Education</h2>
+
+  <div class="exp-card">
+    <div class="exp-title">Degree</div>
+    <div class="exp-meta">University Name • Graduation Year</div>
+  </div>
+</div>
+
+<footer>
+© 1999–2026 ShaddyShack Industries
 </footer>
+
 </body>
 </html>
