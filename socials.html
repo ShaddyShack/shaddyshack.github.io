@@ -3,150 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shatterly Socials</title>
-
-  
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-
-  
-  <link rel="stylesheet" 
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <title>ShaddyShack | Socials</title>
+  <link rel="icon" href="Nopub.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: #f1f5f9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    header {
-      padding: 60px 20px 30px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-      letter-spacing: -1px;
-    }
-
-    header p {
-      margin-top: 10px;
-      color: #94a3b8;
-      font-size: 1rem;
-    }
-
-    .social-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 25px;
-      width: 90%;
-      max-width: 900px;
-      padding: 20px;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border-radius: 16px;
-      padding: 30px;
-      text-align: center;
-      text-decoration: none;
-      color: inherit;
-      transition: all 0.3s ease;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      background: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-    }
-
-    .card i {
-      font-size: 48px;
-      margin-bottom: 15px;
-    }
-
-    .card span {
-      display: block;
-      font-weight: 500;
-      margin-top: 5px;
-    }
-
-    .placeholder {
-      background: rgba(255, 255, 255, 0.03);
-      border: 2px dashed rgba(255, 255, 255, 0.15);
-      cursor: default;
-    }
-
-    .placeholder:hover {
-      transform: none;
-      box-shadow: none;
-      background: rgba(255, 255, 255, 0.03);
-    }
-
-    .twitter { color: #1DA1F2; }
-    .linkedin { color: #0077B5; }
-
-    footer {
-      margin-top: auto;
-      padding: 30px;
-      font-size: 0.85rem;
-      color: #64748b;
-    }
+    .social { text-align: center; }
+    .social i { font-size: 40px; margin-bottom: 12px; display: block; }
+    .soon { border-style: dashed; opacity: .75; }
   </style>
 </head>
-
 <body>
-
-  <header>
-    <h1>Header</h1>
-    <p>Footer</p>
-  </header>
-
-  <div class="social-container">
-
-    <a class="card" href="https://discord.com" target="_blank">
-      <i class="fa-brands fa-discord" style="color:#5865F2;"></i>
-      <span>"Shatterly" on Discord</span>
-    </a>
-
-    <a class="card" href="https://twitter.com/AShatterly" target="_blank">
-      <i class="fa-brands fa-x-twitter twitter"></i>
-      <span>Twitter</span>
-    </a>
-
-    <a class="card" href="https://steamcommunity.com/id/SniperTeamTwo/" target="_blank">
-      <i class="fa-brands fa-steam" style="color:#1b283;"></i>
-      <span>ShaddyShack on Steam</span>
-    </a>
-
-    <a class="card" href="https://linkedin.com" target="_blank">
-      <i class="fa-brands fa-linkedin linkedin"></i>
-      <span>LinkedIn - Linking Soon</span>
-    </a>
-
-    
-    <div class="card placeholder">
-      <span>letterboxd?</span>
+  <nav class="nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="tech.html">Tech</a>
+    <a href="socials.html" aria-current="page">Socials</a>
+    <a href="resume.html">Resume</a>
+  </nav>
+  <main>
+    <h1>Socials</h1>
+    <p class="lead">Where to find me online.</p>
+    <div class="grid" style="margin-top:32px">
+      <div class="card social soon"><i class="fa-brands fa-discord" style="color:#5865F2"></i>Shatterly on Discord</div>
+      <a class="card social" href="https://twitter.com/AShatterly" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i>@AShatterly on X</a>
+      <a class="card social" href="https://steamcommunity.com/id/SniperTeamTwo/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-steam" style="color:#c7d5e0"></i>ShaddyShack on Steam</a>
+      <div class="card social soon"><i class="fa-brands fa-linkedin" style="color:#0a8fd1"></i>LinkedIn, coming soon</div>
     </div>
-
-  </div>
-
+  </main>
   <footer>
-    © 1999–2025 ShaddyShack Industries
-  </footer>
-
+  &copy; 2026 ShaddyShack Industries &middot; <a href="socials.html">Socials</a> &middot; <a href="resume.html">Resume</a>
+</footer>
 </body>
 </html>
